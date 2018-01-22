@@ -1,0 +1,43 @@
+{
+  "name": "with-safe-set-state",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "description":
+    "Reactjs higher order component to easily avoid the unsafe setState",
+  "repository": "madeinfree/with-safe-set-state.git",
+  "author": {
+    "name": "Whien Liou",
+    "email": "sal95610@gmail.com"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15.5.4"
+  },
+  "dependencies": {
+    "react": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "jest": "^22.1.4",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^16.2.0",
+    "regenerator-runtime": "^0.11.1",
+    "webpack": "^3.10.0"
+  },
+  "files": ["lib"],
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}
