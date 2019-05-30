@@ -6,7 +6,7 @@ const withSafeSetState = WrappedComponent => {
       this.child.setState = () => {};
     }
     render() {
-      return <WrappedComponent ref={node => (this.child = node)} />;
+      return <WrappedComponent ref={node => (this.child = node)} {...this.props}/>;
     }
   };
 };
