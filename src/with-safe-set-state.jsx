@@ -5,8 +5,11 @@ const withSafeSetState = WrappedComponent => {
     componentWillUnmount() {
       this.child.setState = () => {};
     }
+    saveRef = node => {
+      this.child = node;
+    }
     render() {
-      return <WrappedComponent ref={node => (this.child = node)} />;
+      return <WrappedComponent ref={this.saveRef} />;
     }
   };
 };
